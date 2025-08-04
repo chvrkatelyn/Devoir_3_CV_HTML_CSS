@@ -1,0 +1,244 @@
+/* Initialisation de polices */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/static/Raleway-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Mise en forme globale */
+body{
+    background-color: #f5f5f5;
+    font-family: 'Raleway';
+}
+
+header, footer {
+    background-color: #17abb3;
+    color: #ffffff;
+}
+
+header, main, footer {
+    width: 1160px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato';
+}
+
+.textGras, .progLanguage, .stars {
+    font-weight: 700;
+}
+
+.textItalique {
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mise en forme du header */
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-content {
+    flex: 1;
+    text-align: center;
+}
+
+.photo-container {
+    text-align: center;
+    width: 30%;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border: 4px solid #ffffff;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
+    margin: auto;
+}
+
+.icon {
+    width: 50%;
+    text-align: left;
+}
+
+.contactIcons {
+    width: 20px;
+}
+
+/* Mise en forme du contenu principal */
+main {
+    display: flex;
+}
+
+.contenu-gauche {
+    width: 25%;
+    background-color: #e3e3e3;
+    padding: 30px;
+}
+
+.contenu-droite {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.titre-contenu {
+    color: #17abb3;
+    border-bottom: 0.5px solid grey;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.stars{
+    color: #17abb3;
+    margin-right: 0;
+    margin-left: auto;
+    align-content: center;
+}
+
+.level {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.langues{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progLanguage, .nomLangue {
+    width: 50%
+}
+
+.nomLangue, .level {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lieuFormation, .lieuStages, .lieuExperience {
+  display: flex;
+  flex-direction: column;    
+}
+
+.nomLangue {
+    width: 30%;
+}
+
+.level {
+    text-align: right;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 0;
+    padding-left: 20px
+}
+
+li::marker {
+    color: #17abb3;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.tabulation {
+    text-indent: 2em;
+    margin:0;
+    text-align: justify;
+}
+
+.dates {
+    color: #17abb3;
+    text-align: right;
+    vertical-align: top;
+}
+
+.contenuFormations .formation, .contenuStages .stage, .contenuExperiences .experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formation, .stage, .experience {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.dateFormation, .dateStage, .dateExperience {
+    color: #17abb3;
+}
+
+.formation:hover, .stage:hover, .experience:hover {
+    border-left: 5px solid #17abb3;
+    background-color: #e3e3e3;
+}
+
+/* Mise en forme du footer */
+.footer {
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.socialIcons:hover {
+    opacity: 0.7;
+}
+
+.socialIcons {
+    width: 40px;
+}
